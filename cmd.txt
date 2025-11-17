@@ -1,0 +1,5 @@
+mongoimport  mongodb://root:password@127.0.0.1:27017 --db productDb --collection ItemDetails --file ./output.json
+
+
+
+mongoimport --host=127.0.0.1 --port=27017  --collection=ItemDetails --db=productDb --file=./output.json  --tlsInsecure

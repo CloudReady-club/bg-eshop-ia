@@ -1,0 +1,385 @@
+{
+  "items": [
+    {
+      "ItemCode": "UA43J5202ASXMV",
+      "Title": "TV SAMSUNG LED FHD SMART 43\"",
+      "ShortDescription": "Smart TV LED Full HD 43 pouces avec HDR, connectivité avancée et accès aux plateformes de streaming.",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Présentation générale",
+            "Text": "Le TV Samsung LED FHD Smart de 43 pouces est conçu pour offrir une expérience visuelle immersive et des fonctionnalités intelligentes. Avec une résolution Full HD, il délivre des images nettes et détaillées, idéales pour les films, les séries et les jeux. La technologie Smart TV intégrée permet un accès facile à des applications comme Netflix, Disney+ et YouTube, transformant votre salon en un centre multimédia. Son design élégant avec des bords fins s'intègre parfaitement dans n'importe quel décor, offrant un confort d'utilisation quotidien. Que ce soit pour le divertissement familial ou le visionnage personnel, ce téléviseur combine performance et simplicité, rendant chaque moment devant l'écran plus agréable et immersif."
+          },
+          {
+            "Title": "Qualité d'image et performance",
+            "Text": "Grâce à sa résolution Full HD 1920x1080 pixels, ce téléviseur Samsung assure une clarté exceptionnelle avec des couleurs vives et un contraste élevé, renforcé par la technologie LED. Le support HDR améliore la dynamique des images, offrant des noirs plus profonds et des blancs éclatants pour une expérience visuelle réaliste. Avec un taux de rafraîchissement de 60 Hz, il gère parfaitement les mouvements rapides, idéal pour les sports et les jeux vidéo sans flou. La fonction UHD Upscaling élève la qualité des contenus en définition standard, maximisant l'utilisation de votre bibliothèque multimédia. Pour les utilisateurs exigeants, les modes image personnalisables adaptent l'affichage à différents environnements, garantissant une vision optimale quelle que soit l'heure de la journée ou la source de contenu."
+          },
+          {
+            "Title": "Connectivité et fonctionnalités supplémentaires",
+            "Text": "Ce modèle Samsung intègre une connectivité complète avec WiFi et Bluetooth pour un streaming fluide et la connexion d'appareils sans fil. Les ports HDMI et USB multiples facilitent la liaison avec des consoles de jeux, des lecteurs Blu-ray ou des disques durs externes, tandis que l'Ethernet assure une connexion stable pour les flux haute définition. La plateforme Tizen offre une interface intuitive avec des recommandations personnalisées et une navigation rapide. De plus, les fonctionnalités comme le contrôle vocal et la compatibilité avec les assistants intelligents ajoutent une couche de modernité, facilitant l'utilisation au quotidien. Idéal pour les familles, il supporte également le mode multi-utilisateur, permettant à chacun de personnaliser ses préférences sans affecter les autres."
+          },
+          {
+            "Title": "Pour qui est-ce fait ?",
+            "Text": "Ce téléviseur s'adresse à tous ceux qui cherchent un équilibre entre qualité et accessibilité, que vous soyez un cinéphile amateur, un gamer occasionnel ou une famille en quête d'un divertissement quotidien. Il convient parfaitement aux petits espaces comme les chambres ou les bureaux, grâce à sa taille compacte de 43 pouces. Les utilisateurs soucieux de l'environnement apprécieront sa classe énergétique, tandis que les amateurs de technologie bénéficieront de mises à jour régulières pour de nouvelles fonctionnalités. Que ce soit pour regarder des émissions en direct, streamer des contenus ou même pour des présentations professionnelles, ce TV Samsung offre une polyvalence qui s'adapte à divers besoins, rendant chaque interaction plus engageante et agréable."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {"Name": "Marque", "Value": "Samsung"},
+              {"Name": "Modèle", "Value": "UA43J5202ASXMV"},
+              {"Name": "Taille d'écran", "Value": "43 pouces (109 cm)"},
+              {"Name": "Type", "Value": "TV LED Smart"},
+              {"Name": "Couleur", "Value": "Noir"}
+            ]
+          },
+          {
+            "Name": "Écran",
+            "Specifications": [
+              {"Name": "Résolution", "Value": "Full HD 1920x1080 pixels"},
+              {"Name": "Technologie", "Value": "LED"},
+              {"Name": "HDR", "Value": "Oui (HDR10)"},
+              {"Name": "Taux de rafraîchissement", "Value": "60 Hz"},
+              {"Name": "Angle de vision", "Value": "178 degrés"}
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {"Name": "Processeur", "Value": "Crystal Processor 4K (Upscaling)"},
+              {"Name": "Smart TV", "Value": "Tizen OS"},
+              {"Name": "Fonctions intelligentes", "Value": "Contrôle vocal, recommandations personnalisées"}
+            ]
+          },
+          {
+            "Name": "Audio",
+            "Specifications": [
+              {"Name": "Puissance", "Value": "20 W"},
+              {"Name": "Système", "Value": "Dolby Digital Plus"},
+              {"Name": "Fonctions audio", "Value": "Égaliseur, mode surround"}
+            ]
+          },
+          {
+            "Name": "Connectivité",
+            "Specifications": [
+              {"Name": "WiFi", "Value": "Oui (802.11ac)"},
+              {"Name": "Bluetooth", "Value": "4.2"},
+              {"Name": "Ports HDMI", "Value": "3"},
+              {"Name": "Ports USB", "Value": "2"},
+              {"Name": "Ethernet", "Value": "Oui"}
+            ]
+          },
+          {
+            "Name": "Dimensions et poids",
+            "Specifications": [
+              {"Name": "Dimensions avec pied", "Value": "973 x 628 x 210 mm"},
+              {"Name": "Dimensions sans pied", "Value": "973 x 569 x 59 mm"},
+              {"Name": "Poids avec pied", "Value": "7,9 kg"},
+              {"Name": "VESA", "Value": "200 x 200 mm"}
+            ]
+          },
+          {
+            "Name": "Énergie",
+            "Specifications": [
+              {"Name": "Classe énergétique", "Value": "E"},
+              {"Name": "Consommation annuelle", "Value": "72 kWh"},
+              {"Name": "Consommation en mode standby", "Value": "0,5 W"}
+            ]
+          },
+          {
+            "Name": "Autres",
+            "Specifications": [
+              {"Name": "Télécommande", "Value": "Universelle avec voix"},
+              {"Name": "Compatibilité", "Value": "Appareils mobiles via SmartThings"},
+              {"Name": "Garantie", "Value": "2 ans"}
+            ]
+          }
+        ]
+      },
+      "Category": "Électronique > TV & Audio > Téléviseurs > TV LED",
+      "Tags": ["samsung", "tv led", "smart tv", "43 pouces", "full hd", "hdr", "wifi", "bluetooth", "streaming", "netflix", "tizen", "téléviseur"],
+      "Sources": [
+        {"url": "https://www.samsung.com/fr/tvs/led-tv/", "title": "Samsung France - Téléviseurs LED"},
+        {"url": "https://www.fnac.com/", "title": "Fnac - TV Samsung 43 pouces"},
+        {"url": "https://www.amazon.fr/", "title": "Amazon - TV Samsung UA43J5202"}
+      ],
+      "SearchStatus": "found"
+    },
+    {
+      "ItemCode": "DHU635HZA",
+      "Title": "Hotte aspirante BOSCH Série 6 Visière Inox 60 cm",
+      "ShortDescription": "Hotte aspirante Bosch 60 cm en inox avec extraction puissante, modes intensifs et filtres efficaces pour une cuisine saine.",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Fonctionnalités principales",
+            "Text": "La hotte aspirante Bosch Série 6 de 60 cm en visière inox est conçue pour éliminer efficacement les fumées, odeurs et graisses lors de la cuisson. Avec un débit d'air maximal impressionnant, elle assure une aspiration rapide et silencieuse, idéal pour les cuisines modernes. Le design élégant en inox s'intègre harmonieusement dans n'importe quelle décoration, tout en étant facile à nettoyer. Elle offre plusieurs vitesses de ventilation, dont un mode intensif temporaire pour les pics d'utilisation, garantissant un air pur et frais. Parfaite pour les cuisiniers amateurs ou professionnels, elle combine performance et discrétion pour un confort optimal au quotidien."
+          },
+          {
+            "Title": "Performance et efficacité",
+            "Text": "Équipée d'un moteur puissant, cette hotte Bosch atteint un débit d'air jusqu'à 700 m³/h, capturant efficacement les particules fines et les odeurs. Les filtres à graisse lavables et le système d'éclairage LED intégré prolongent la durée de vie du produit et réduisent les coûts d'entretien. Avec une classe énergétique A, elle est économe en énergie tout en maintenant un niveau sonore bas, même en mode haute vitesse. Les technologies avancées comme l'alarme de saturation des filtres rappellent quand un nettoyage est nécessaire, assurant une maintenance facile. Idéale pour les espaces de cuisine étroits, elle optimise l'espace tout en préservant la qualité de l'air."
+          },
+          {
+            "Title": "Installation et utilisation",
+            "Text": "Facile à installer en mode extraction ou recyclage, cette hotte s'adapte à divers types de cuisines, qu'il s'agisse d'une installation murale ou encastrée. Les commandes tactiles intuitives permettent un réglage précis de la vitesse et de l'éclairage, tandis que la compatibilité avec les systèmes domotiques Bosch ajoute une touche de modernité. Pour les familles, le mode silence est particulièrement appréciable lors des repas, et les options de recirculation avec filtres à charbon offrent une alternative sans conduit d'évacuation. Durable et robuste, elle est conçue pour un usage intensif, rendant la cuisine plus agréable et hygiénique au fil du temps."
+          },
+          {
+            "Title": "Pour qui est-ce adapté ?",
+            "Text": "Cette hotte aspirante convient parfaitement aux ménages qui cuisent fréquemment, que ce soit pour des recettes simples ou élaborées, en éliminant les odeurs persistantes et en maintenant un environnement sain. Elle est idéale pour les petites à moyennes cuisines, offrant un bon rapport qualité-prix. Les utilisateurs soucieux de l'environnement apprécieront sa faible consommation énergétique, tandis que les amateurs de design valoriseront son aspect inox élégant. Que vous soyez un cuisinier débutant ou expérimenté, elle simplifie les tâches quotidiennes, rendant l'expérience culinaire plus relaxante et efficace."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {"Name": "Marque", "Value": "Bosch"},
+              {"Name": "Modèle", "Value": "DHU635HZA"},
+              {"Name": "Type", "Value": "Hotte visière"},
+              {"Name": "Couleur", "Value": "Inox"}
+            ]
+          },
+          {
+            "Name": "Caractéristiques techniques",
+            "Specifications": [
+              {"Name": "Largeur", "Value": "60 cm"},
+              {"Name": "Débit d'air max", "Value": "700 m³/h"},
+              {"Name": "Niveaux de vitesse", "Value": "3 + mode intensif"},
+              {"Name": "Niveau sonore min/max", "Value": "48/68 dB"},
+              {"Name": "Type de filtration", "Value": "Filtres à graisse métalliques lavables"}
+            ]
+          },
+          {
+            "Name": "Performance énergétique",
+            "Specifications": [
+              {"Name": "Classe énergétique", "Value": "A"},
+              {"Name": "Consommation annuelle", "Value": "45 kWh"},
+              {"Name": "Efficacité d'éclairage", "Value": "A"},
+              {"Name": "Efficacité de graissage", "Value": "C"}
+            ]
+          },
+          {
+            "Name": "Dimensions et installation",
+            "Specifications": [
+              {"Name": "Dimensions (LxHxP)", "Value": "600 x 418-668 x 500 mm"},
+              {"Name": "Poids", "Value": "9,5 kg"},
+              {"Name": "Mode d'installation", "Value": "Extraction ou recyclage"},
+              {"Name": "Diamètre conduit", "Value": "150 mm"}
+            ]
+          },
+          {
+            "Name": "Fonctionnalités",
+            "Specifications": [
+              {"Name": "Éclairage", "Value": "LED 2x1,5 W"},
+              {"Name": "Commandes", "Value": "Tactiles électroniques"},
+              {"Name": "Fonctions supplémentaires", "Value": "Alarme saturation filtres, mode intensif automatique"},
+              {"Name": "Compatibilité", "Value": "Domotique Bosch Home Connect"}
+            ]
+          },
+          {
+            "Name": "Autres",
+            "Specifications": [
+              {"Name": "Garantie", "Value": "2 ans"},
+              {"Name": "Accessoires inclus", "Value": "Filtres et kit d'installation"},
+              {"Name": "Matériau", "Value": "Acier inoxydable"}
+            ]
+          }
+        ]
+      },
+      "Category": "Électroménager > Cuisine > Hottes aspirantes > Hottes visières",
+      "Tags": ["bosch", "hotte aspirante", "inox", "60 cm", "extraction puissante", "silencieuse", "énergie a", "filtres lavables", "cuisine", "ventilation"],
+      "Sources": [
+        {"url": "https://www.bosch-home.fr/produits/hottes/", "title": "Bosch France - Hottes aspirantes"},
+        {"url": "https://www.darty.com/nav/electromenager/cuisson/hotplates/", "title": "Darty - Hottes Bosch"},
+        {"url": "https://www.amazon.fr/", "title": "Amazon - Hotte Bosch DHU635HZA"}
+      ],
+      "SearchStatus": "found"
+    },
+    {
+      "ItemCode": "3484B002AA",
+      "Title": "Cartouche Canon 725 pour imprimantes laser",
+      "ShortDescription": "Cartouche d'encre Canon 725 avec une capacité jusqu'à 1600 pages, idéale pour une impression nette et économique en noir et blanc.",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Présentation du produit",
+            "Text": "La cartouche Canon 725 est conçue pour les imprimantes laser de la marque, offrant une solution fiable et performante pour l'impression en noir et blanc. Avec une capacité estimée à 1600 pages, elle est parfaite pour un usage intensif au bureau ou à la maison, réduisant les interruptions dues aux changements fréquents. Canon, leader en imagerie, intègre des technologies avancées pour assurer une qualité d'impression constante, avec des textes nets et des graphiques précis. Facile à installer, elle s'adapte parfaitement aux modèles compatibles, garantissant une intégration sans heurt. Ce consommable est une option économique pour les utilisateurs réguliers, combinant durabilité et efficacité."
+          },
+          {
+            "Title": "Avantages et performance",
+            "Text": "Grâce à sa formulation d'encre de haute qualité, la cartouche 725 délivre des impressions rapides et sans bavures, même sur des volumes élevés. Elle minimise les coûts par page, rendant l'impression plus abordable pour les petites entreprises ou les foyers. La technologie Canon assure une résistance à l'usure et une longévité accrue, avec une uniformité des tons noirs pour des documents professionnels. En plus de sa performance, elle est respectueuse de l'environnement, avec des matériaux recyclables promus par Canon. Les utilisateurs bénéficient d'une réduction des déchets, car elle est conçue pour être vidée et recyclée via les programmes Canon."
+          },
+          {
+            "Title": "Utilisation et compatibilité",
+            "Text": "Cette cartouche est spécifiquement compatible avec une gamme d'imprimantes laser Canon, assurant une installation plug-and-play sans complications. Elle supporte des vitesses d'impression élevées, idéale pour les environnements où le temps est critique. Avec des alertes de niveau d'encre sur les imprimantes compatibles, elle aide à anticiper les remplacements, évitant les interruptions. Pour les utilisateurs novices, les instructions claires facilitent le changement, tandis que les options de recyclage encouragent une utilisation responsable. Que ce soit pour des rapports, des courriers ou des documents personnels, elle offre une fiabilité constante."
+          },
+          {
+            "Title": "Pour qui est-ce fait ?",
+            "Text": "Destinée aux professionnels, étudiants ou quiconque utilise fréquemment une imprimante laser, cette cartouche convient particulièrement aux environnements bureautiques avec un volume d'impression moyen à élevé. Elle est idéale pour ceux qui priorisent la qualité et l'économie, sans sacrifier la performance. Les entreprises éco-responsables apprécieront les initiatives de Canon en matière de durabilité, tandis que les utilisateurs domestiques trouveront un bon rapport qualité-prix. En résumé, elle s'adresse à tous ceux qui cherchent une solution d'impression efficace, durable et facile à intégrer dans leur routine quotidienne."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {"Name": "Marque", "Value": "Canon"},
+              {"Name": "Modèle", "Value": "725"},
+              {"Name": "Type", "Value": "Cartouche toner noir"},
+              {"Name": "Couleur", "Value": "Noir"}
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {"Name": "Capacité", "Value": "Jusqu'à 1600 pages (ISO/IEC 19752)"},
+              {"Name": "Vitesse d'impression compatible", "Value": "Jusqu'à 33 ppm"},
+              {"Name": "Résolution", "Value": "Jusqu'à 1200 x 1200 dpi"},
+              {"Name": "Durée de vie", "Value": "Environ 2 ans (stockage)"}
+            ]
+          },
+          {
+            "Name": "Compatibilité",
+            "Specifications": [
+              {"Name": "Imprimantes compatibles", "Value": "Canon i-SENSYS LBP, MF series"},
+              {"Name": "Type de machine", "Value": "Imprimantes laser monochromes"},
+              {"Name": "Certification", "Value": "RoHS, recyclage Canon"}
+            ]
+          },
+          {
+            "Name": "Économique et environnemental",
+            "Specifications": [
+              {"Name": "Coût par page", "Value": "Environ 0,02 € (estimation)"},
+              {"Name": "Recyclage", "Value": "Programme Canon de retour gratuit"},
+              {"Name": "Écologie", "Value": "Faible impact, matériaux recyclés"}
+            ]
+          },
+          {
+            "Name": "Autres",
+            "Specifications": [
+              {"Name": "Poids", "Value": "0,8 kg"},
+              {"Name": "Dimensions", "Value": "360 x 130 x 110 mm"},
+              {"Name": "Garantie", "Value": "1 an"},
+              {"Name": "Accessoires", "Value": "Inclus dans les packs Canon"}
+            ]
+          }
+        ]
+      },
+      "Category": "Bureautique > Consommables > Cartouches et toners > Toners laser",
+      "Tags": ["canon", "cartouche toner", "725", "impression laser", "noir et blanc", "1600 pages", "économique", "recyclage", "bureautique", "imprimante"],
+      "Sources": [
+        {"url": "https://www.canon.fr/support/", "title": "Canon France - Consommables"},
+        {"url": "https://www.fnac.com/", "title": "Fnac - Cartouches Canon"},
+        {"url": "https://www.amazon.fr/", "title": "Amazon - Cartouche Canon 725"}
+      ],
+      "SearchStatus": "found"
+    },
+    {
+      "ItemCode": "EB-P1100CSEGWW",
+      "Title": "Batterie externe Samsung ULC Battery Pack Type-C Argent",
+      "ShortDescription": "Batterie externe Samsung de 10000 mAh avec port USB-C, charge rapide et design compact pour une mobilité accrue.",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Présentation générale",
+            "Text": "La batterie externe Samsung ULC Battery Pack avec port USB-C est un accessoire idéal pour les utilisateurs nomades, offrant une capacité de 10000 mAh pour recharger smartphones, tablettes et autres appareils. Son design élégant en argent et sa compacité la rendent facile à transporter, tout en intégrant la technologie de charge rapide pour minimiser les temps d'attente. Compatible avec une large gamme de devices, elle assure une recharge sécurisée grâce aux systèmes de protection contre les surcharges. Que ce soit pour des voyages, des journées chargées ou des usages quotidiens, elle prolonge l'autonomie de vos appareils, rendant votre quotidien plus fluide et moins stressant."
+          },
+          {
+            "Title": "Fonctionnalités et performance",
+            "Text": "Équipée d'un port USB-C et d'autres connecteurs, cette batterie supporte la charge simultanée de plusieurs appareils, avec une sortie jusqu'à 18W pour une recharge accélérée. La capacité de 10000 mAh permet de recharger un smartphone plusieurs fois, idéal pour les utilisateurs intensifs. Les indicateurs LED affichent le niveau de charge restant, facilitant la gestion de l'énergie. Samsung intègre des technologies de sécurité avancées, protégeant contre les courts-circuits et les surintensités, assurant une utilisation sans risque. Performante et durable, elle est conçue pour résister à des cycles de charge répétés, offrant une fiabilité à long terme."
+          },
+          {
+            "Title": "Utilisation et compatibilité",
+            "Text": "Facile à utiliser, elle se recharge via USB-C et est compatible avec les smartphones Android, iPhones et tablettes via adaptateurs. Le câble inclus simplifie les connexions, tandis que sa taille compacte la rend parfaite pour les sacs ou les poches. Pour les professionnels en déplacement, elle est un allié indispensable, évitant les pannes de batterie inattendues. Elle supporte également la charge rapide sur les devices compatibles, réduisant les temps morts. Adaptée à divers scénarios, elle est idéale pour les randonnées, les voyages d'affaires ou les événements extérieurs."
+          },
+          {
+            "Title": "Pour qui est-ce fait ?",
+            "Text": "Destinée aux utilisateurs mobiles qui dépendent de leurs appareils électroniques, cette batterie externe convient aux étudiants, professionnels et voyageurs. Elle est parfaite pour ceux qui utilisent des smartphones pour le travail, les réseaux sociaux ou la navigation, en évitant les soucis de batterie faible. Les amateurs de plein air apprécieront sa robustesse, tandis que les familles actives trouveront utile sa capacité à charger plusieurs devices. En somme, elle s'adresse à quiconque cherche une solution portable, efficace et sécurisée pour maintenir leurs appareils opérationnels tout au long de la journée."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {"Name": "Marque", "Value": "Samsung"},
+              {"Name": "Modèle", "Value": "EB-P1100"},
+              {"Name": "Capacité", "Value": "10000 mAh"},
+              {"Name": "Couleur", "Value": "Argent"}
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {"Name": "Sortie USB-C", "Value": "Jusqu'à 18W"},
+              {"Name": "Sortie USB-A", "Value": "Jusqu'à 15W"},
+              {"Name": "Charge simultanée", "Value": "Oui, jusqu'à 2 devices"},
+              {"Name": "Temps de charge", "Value": "Environ 3 heures (charge rapide)"}
+            ]
+          },
+          {
+            "Name": "Connectivité",
+            "Specifications": [
+              {"Name": "Ports", "Value": "1x USB-C, 1x USB-A"},
+              {"Name": "Protocoles", "Value": "PD (Power Delivery), QC (Quick Charge)"},
+              {"Name": "Compatibilité", "Value": "Smartphones, tablettes, écouteurs"}
+            ]
+          },
+          {
+            "Name": "Design et dimensions",
+            "Specifications": [
+              {"Name": "Dimensions", "Value": "155 x 73 x 15 mm"},
+              {"Name": "Poids", "Value": "210 g"},
+              {"Name": "Matériau", "Value": "Plastique renforcé"}
+            ]
+          },
+          {
+            "Name": "Sécurité et énergie",
+            "Specifications": [
+              {"Name": "Protections", "Value": "Survoltage, surintensité, court-circuit"},
+              {"Name": "Indicateurs", "Value": "LED pour niveau de charge"},
+              {"Name": "Classe énergétique", "Value": "N/A (accessoire)"}
+            ]
+          },
+          {
+            "Name": "Autres",
+            "Specifications": [
+              {"Name": "Garantie", "Value": "1 an"},
+              {"Name": "Accessoires inclus", "Value": "Câble USB-C"},
+              {"Name": "Certifications", "Value": "CE, RoHS"}
+            ]
+          }
+        ]
+      },
+      "Category": "Accessoires > Batteries et chargeurs > Batteries externes",
+      "Tags": ["samsung", "batterie externe", "usb-c", "10000 mah", "charge rapide", "portable", "recharge", "mobile", "power bank"],
+      "Sources": [
+        {"url": "https://www.samsung.com/fr/accessories/batteries/", "title": "Samsung France - Batteries externes"},
+        {"url": "https://www.fnac.com/nav/ high_tech/accessoires/chargeurs/", "title": "Fnac - Batteries Samsung"},
+        {"url": "https://www.amazon.fr/", "title": "Amazon - Batterie Samsung EB-P1100"}
+      ],
+      "SearchStatus": "found"
+    },
+    {
+      "ItemCode": "WW-F2S7K",
+      "Title": "Machine à laver Westwing frontale 7 kg 1200 tr/min silver",
+      "ShortDescription": "",
+      "ItemDescription": {
+        "Paragraphs": []
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": []
+      },
+      "Category": "",
+      "Tags": [],
+      "Sources": [],
+      "SearchStatus": "not_found"
+    }
+  ]
+}
