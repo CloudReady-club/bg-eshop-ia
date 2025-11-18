@@ -25,6 +25,10 @@ class ItemSpecification(BaseModel):
 #     picture_url: Optional[str] = None
 #     picture_miniature_url: Optional[str] = None
 #     main_picture: bool = False
+class Source(BaseModel):
+    url: Optional[str] = Field(default=None, alias="Url")
+    title: Optional[str] = Field(default=None, alias="Title")
+
 
 class ItemProductDetails(BaseModel):
     id: Optional[str] = Field(default=None, alias="_id")
@@ -35,6 +39,9 @@ class ItemProductDetails(BaseModel):
     item_specification: Optional[ItemSpecification] = Field(default=None, alias="ItemSpecification")
     # item_pictures: List[ItemPicture] = Field(default=[], alias="ItemPicture")
     last_modification: datetime = Field(default=None, alias="LastModification")
+    sementic_vector: Optional[List[float]] = Field(default=None, alias="SementicVector")        
+    search_status: Optional[str] = Field(default=None, alias="SearchStatus")
+    sources: Optional[List[Source]] = Field(default=None, alias="Sources")
 
     @field_validator('last_modification', mode='before')
     @classmethod

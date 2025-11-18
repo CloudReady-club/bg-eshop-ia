@@ -1,9 +1,8 @@
-
 from typing import List
 import openai
-from product.output import ItemProductDetailsResponse
+from  product.output import parse_item_product_details_response
 
-class ProductSerchItem:
+class ProductSearchItem:
     def __init__(self):
         self.item_list= []
 
@@ -45,21 +44,16 @@ class LLMCompleter:
         
         response = self.client.chat.completions.create(
             model=self.model_name,
+            temperature=0.3,
             messages=[
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": text}
             ]
           
         )
-        
         json_content = response.choices[0].message.content
-        try:
-            product_response = ItemProductDetailsResponse.model_validate_json(json_content)
-            return product_response
-        except Exception as e:
-            print(f"Validation error: {e}")
-            print(f"Response: {json_content}")
-            raise
+        return parse_item_product_details_response(json_content)    
+
         
 
     

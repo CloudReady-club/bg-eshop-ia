@@ -48,7 +48,7 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
       "Category": "string",
       "Tags": ["array"],
       "Sources": [
-        {"url": "string", "title": "string"}
+        {"Url": "string", "Title": "string"}
       ],
       "SearchStatus": "found" | "not_found"
     }
@@ -104,7 +104,7 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
 1. Rechercher d'abord le **code produit** sur le web
 2. Si non trouvé, rechercher le **nom complet**
 3. Confirmer qu'il s'agit du bon produit
-4. Vérifier le code produit/référence si ce n'est pas la meme alors le produit est not_found
+4. Vérifier le code produit/référence si ce n'est pas la meme alors le produit est trouvé
 5. Consulter : sites fabricants, Amazon, Fnac, Darty, Boulanger, Cdiscount
 6. Extraire specs depuis sources officielles
 7. Organiser en catégories logiques (minimum 15-20 specs)
@@ -197,12 +197,12 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
       "Tags": ["Samsung", "TV LED", "Smart TV", "43 pouces", "Full HD", "HDR", "WiFi", "streaming", "Netflix", "téléviseur"],
       "Sources": [
         {
-          "url": "https://www.samsung.com/fr/tvs/",
-          "title": "Samsung France - Téléviseurs"
+          "Url": "https://www.samsung.com/fr/tvs/",
+          "Title": "Samsung France - Téléviseurs"
         },
         {
-          "url": "https://www.amazon.fr/",
-          "title": "Amazon - Samsung TV 43 pouces"
+          "Url": "https://www.amazon.fr/",
+          "Title": "Amazon - Samsung TV 43 pouces"
         }
       ],
       "SearchStatus": "found"
@@ -210,7 +210,6 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
   ]
 }
 ```
-
 ## Règles Critiques :
 - Recherche web **obligatoire** (code produit puis nom)
 - Données **vérifiées uniquement**, pas d'invention

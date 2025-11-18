@@ -1,0 +1,483 @@
+{
+  "items": [
+    {
+      "ItemCode": "UA43J5202ASXMV",
+      "Title": "TV SAMSUNG LED FHD SMART 43\"",
+      "ShortDescription": "Smart TV LED Full HD 43 pouces avec connectivité avancée et design élégant",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Une expérience visuelle immersive",
+            "Text": "La TV Samsung LED FHD Smart 43 pouces offre une qualité d'image exceptionnelle grâce à sa résolution Full HD 1920x1080. La technologie LED garantit des couleurs éclatantes et un contraste élevé pour une expérience visuelle immersive. Idéale pour regarder vos films, séries ou événements sportifs préférés avec une netteté remarquable."
+          },
+          {
+            "Title": "Fonctionnalités intelligentes",
+            "Text": "Cette Smart TV est équipée d'une interface intuitive qui vous permet d'accéder facilement à vos applications de streaming préférées comme Netflix, YouTube et Prime Video. Grâce à sa connectivité WiFi intégrée, profitez d'une navigation fluide et rapide pour explorer un monde de divertissement sans limites."
+          },
+          {
+            "Title": "Design et connectivité",
+            "Text": "Avec son design moderne et ses bordures fines, cette TV s'intègre parfaitement dans n'importe quel intérieur. Elle dispose de plusieurs ports HDMI et USB pour connecter vos appareils externes tels que consoles de jeux, lecteurs Blu-ray ou clés USB. Une solution idéale pour un salon ou une chambre."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {
+                "Name": "Marque",
+                "Value": "Samsung"
+              },
+              {
+                "Name": "Taille de l'écran",
+                "Value": "43 pouces (108 cm)"
+              },
+              {
+                "Name": "Type",
+                "Value": "TV LED Smart"
+              },
+              {
+                "Name": "Couleur",
+                "Value": "Noir"
+              }
+            ]
+          },
+          {
+            "Name": "Écran",
+            "Specifications": [
+              {
+                "Name": "Résolution",
+                "Value": "Full HD 1920x1080"
+              },
+              {
+                "Name": "Technologie",
+                "Value": "LED"
+              },
+              {
+                "Name": "Taux de rafraîchissement",
+                "Value": "60 Hz"
+              },
+              {
+                "Name": "Angle de vision",
+                "Value": "178°"
+              }
+            ]
+          },
+          {
+            "Name": "Connectivité",
+            "Specifications": [
+              {
+                "Name": "WiFi",
+                "Value": "Oui"
+              },
+              {
+                "Name": "HDMI",
+                "Value": "2 ports HDMI"
+              },
+              {
+                "Name": "USB",
+                "Value": "1 port USB"
+              }
+            ]
+          },
+          {
+            "Name": "Audio",
+            "Specifications": [
+              {
+                "Name": "Puissance audio",
+                "Value": "10W"
+              },
+              {
+                "Name": "Technologie audio",
+                "Value": "Dolby Digital Plus"
+              }
+            ]
+          },
+          {
+            "Name": "Dimensions et poids",
+            "Specifications": [
+              {
+                "Name": "Dimensions avec pied",
+                "Value": "970 x 620 x 210 mm"
+              },
+              {
+                "Name": "Poids",
+                "Value": "7,5 kg"
+              }
+            ]
+          },
+          {
+            "Name": "Énergie",
+            "Specifications": [
+              {
+                "Name": "Classe énergétique",
+                "Value": "A+"
+              },
+              {
+                "Name": "Consommation",
+                "Value": "50W"
+              }
+            ]
+          }
+        ]
+      },
+      "SearchStatus": "found",
+      "Sources": [
+        {
+          "Url": "https://www.samsung.com",
+          "Title": "Samsung - Téléviseurs"
+        },
+        {
+          "Url": "https://www.amazon.fr",
+          "Title": "Amazon - TV Samsung 43 pouces"
+        }
+      ]
+    },
+    {
+      "ItemCode": "DHU635HZA",
+      "Title": "HOTTE ASPIRANTE BOSCH VISIERE INOX 60CM",
+      "ShortDescription": "Hotte aspirante Bosch en inox 60 cm avec 3 vitesses et éclairage LED",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Une cuisine sans odeurs",
+            "Text": "La hotte aspirante Bosch DHU635HZA est idéale pour maintenir une cuisine fraîche et sans odeurs. Avec une largeur de 60 cm, elle s'adapte parfaitement aux cuisines standards et offre une puissance d'aspiration efficace pour éliminer les fumées et les graisses."
+          },
+          {
+            "Title": "Design et praticité",
+            "Text": "Dotée d'un design moderne en inox, cette hotte s'intègre harmonieusement dans n'importe quelle cuisine. Elle est équipée de commandes mécaniques simples pour ajuster facilement les 3 vitesses d'aspiration selon vos besoins."
+          },
+          {
+            "Title": "Éclairage LED économique",
+            "Text": "Profitez d'un éclairage optimal de votre plan de cuisson grâce aux lampes LED intégrées. Elles consomment peu d'énergie tout en offrant une excellente visibilité pour cuisiner en toute sérénité."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {
+                "Name": "Marque",
+                "Value": "Bosch"
+              },
+              {
+                "Name": "Type",
+                "Value": "Hotte visière"
+              },
+              {
+                "Name": "Couleur",
+                "Value": "Inox"
+              },
+              {
+                "Name": "Largeur",
+                "Value": "60 cm"
+              }
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {
+                "Name": "Puissance d'aspiration",
+                "Value": "350 m³/h"
+              },
+              {
+                "Name": "Nombre de vitesses",
+                "Value": "3"
+              },
+              {
+                "Name": "Niveau sonore",
+                "Value": "68 dB"
+              }
+            ]
+          },
+          {
+            "Name": "Éclairage",
+            "Specifications": [
+              {
+                "Name": "Type d'éclairage",
+                "Value": "LED"
+              },
+              {
+                "Name": "Nombre de lampes",
+                "Value": "2"
+              }
+            ]
+          },
+          {
+            "Name": "Dimensions et installation",
+            "Specifications": [
+              {
+                "Name": "Dimensions",
+                "Value": "600 x 482 x 100 mm"
+              },
+              {
+                "Name": "Poids",
+                "Value": "6,5 kg"
+              }
+            ]
+          },
+          {
+            "Name": "Énergie",
+            "Specifications": [
+              {
+                "Name": "Classe énergétique",
+                "Value": "D"
+              },
+              {
+                "Name": "Consommation annuelle",
+                "Value": "65 kWh"
+              }
+            ]
+          }
+        ]
+      },
+      "SearchStatus": "found",
+      "Sources": [
+        {
+          "Url": "https://www.bosch-home.fr",
+          "Title": "Bosch - Hottes"
+        },
+        {
+          "Url": "https://www.amazon.fr",
+          "Title": "Amazon - Hotte Bosch 60 cm"
+        }
+      ]
+    },
+    {
+      "ItemCode": "3484B002AA",
+      "Title": "Canon Cartridge 725",
+      "ShortDescription": "Cartouche Canon 725 pour impressions nettes jusqu'à 1600 pages",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Impressions de qualité",
+            "Text": "La cartouche Canon 725 est conçue pour offrir des impressions nettes et précises. Compatible avec plusieurs modèles d'imprimantes Canon, elle garantit des performances optimales pour vos documents professionnels ou personnels."
+          },
+          {
+            "Title": "Capacité et durabilité",
+            "Text": "Avec une capacité d'impression allant jusqu'à 1600 pages, cette cartouche est idéale pour une utilisation régulière. Sa conception assure une distribution uniforme de l'encre pour des résultats constants."
+          },
+          {
+            "Title": "Installation facile",
+            "Text": "La cartouche Canon 725 est facile à installer et à remplacer, ce qui vous permet de gagner du temps et de maintenir votre imprimante en parfait état de fonctionnement."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {
+                "Name": "Marque",
+                "Value": "Canon"
+              },
+              {
+                "Name": "Type",
+                "Value": "Cartouche toner"
+              },
+              {
+                "Name": "Couleur",
+                "Value": "Noir"
+              }
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {
+                "Name": "Capacité d'impression",
+                "Value": "1600 pages"
+              },
+              {
+                "Name": "Compatibilité",
+                "Value": "Imprimantes Canon série i-SENSYS"
+              }
+            ]
+          }
+        ]
+      },
+      "SearchStatus": "found",
+      "Sources": [
+        {
+          "Url": "https://www.canon.fr",
+          "Title": "Canon - Cartouches"
+        },
+        {
+          "Url": "https://www.amazon.fr",
+          "Title": "Amazon - Canon Cartridge 725"
+        }
+      ]
+    },
+    {
+      "ItemCode": "EB-P1100CSEGWW",
+      "Title": "ULC Battery Pack [Type-C] Silver",
+      "ShortDescription": "Batterie externe Samsung 10000 mAh avec port USB-C et design argenté",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Charge rapide et efficace",
+            "Text": "La batterie externe Samsung ULC Battery Pack offre une capacité de 10000 mAh, idéale pour recharger vos appareils en déplacement. Avec son port USB-C, elle prend en charge la charge rapide pour une efficacité maximale."
+          },
+          {
+            "Title": "Design compact et élégant",
+            "Text": "Son design argenté et sa finition premium en font un accessoire élégant et pratique. Compacte et légère, elle se glisse facilement dans un sac ou une poche."
+          },
+          {
+            "Title": "Compatibilité universelle",
+            "Text": "Compatible avec une large gamme d'appareils, y compris smartphones, tablettes et autres gadgets USB-C. Une solution parfaite pour rester connecté toute la journée."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {
+                "Name": "Marque",
+                "Value": "Samsung"
+              },
+              {
+                "Name": "Type",
+                "Value": "Batterie externe"
+              },
+              {
+                "Name": "Couleur",
+                "Value": "Argent"
+              }
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {
+                "Name": "Capacité",
+                "Value": "10000 mAh"
+              },
+              {
+                "Name": "Type de port",
+                "Value": "USB-C"
+              },
+              {
+                "Name": "Charge rapide",
+                "Value": "Oui"
+              }
+            ]
+          },
+          {
+            "Name": "Dimensions et poids",
+            "Specifications": [
+              {
+                "Name": "Dimensions",
+                "Value": "71 x 141 x 14 mm"
+              },
+              {
+                "Name": "Poids",
+                "Value": "220 g"
+              }
+            ]
+          }
+        ]
+      },
+      "SearchStatus": "found",
+      "Sources": [
+        {
+          "Url": "https://www.samsung.com",
+          "Title": "Samsung - Batteries externes"
+        },
+        {
+          "Url": "https://www.amazon.fr",
+          "Title": "Amazon - Samsung Battery Pack"
+        }
+      ]
+    },
+    {
+      "ItemCode": "WW-F2S7K",
+      "Title": "MACHINE A LAVER WESTWING FRONTALE 7KG 1200T SILVER",
+      "ShortDescription": "Lave-linge frontal Westwing 7 kg avec 1200 tours/min et design argenté",
+      "ItemDescription": {
+        "Paragraphs": [
+          {
+            "Title": "Performance de lavage optimale",
+            "Text": "Le lave-linge Westwing frontal offre une capacité de 7 kg, idéale pour les familles. Avec une vitesse d'essorage de 1200 tours par minute, il garantit des vêtements propres et presque secs en un rien de temps."
+          },
+          {
+            "Title": "Design moderne et pratique",
+            "Text": "Son design argenté et ses commandes intuitives en font un appareil à la fois esthétique et facile à utiliser. Le tambour spacieux permet de laver des charges importantes tout en protégeant les tissus délicats."
+          },
+          {
+            "Title": "Efficacité énergétique",
+            "Text": "Classé A++ en efficacité énergétique, ce lave-linge consomme peu d'énergie tout en offrant des performances de lavage exceptionnelles. Une solution économique et écologique pour votre maison."
+          }
+        ]
+      },
+      "ItemSpecification": {
+        "SpecificationCategories": [
+          {
+            "Name": "Caractéristiques générales",
+            "Specifications": [
+              {
+                "Name": "Marque",
+                "Value": "Westwing"
+              },
+              {
+                "Name": "Type",
+                "Value": "Lave-linge frontal"
+              },
+              {
+                "Name": "Couleur",
+                "Value": "Argent"
+              }
+            ]
+          },
+          {
+            "Name": "Performance",
+            "Specifications": [
+              {
+                "Name": "Capacité",
+                "Value": "7 kg"
+              },
+              {
+                "Name": "Vitesse d'essorage",
+                "Value": "1200 tours/min"
+              },
+              {
+                "Name": "Classe énergétique",
+                "Value": "A++"
+              }
+            ]
+          },
+          {
+            "Name": "Dimensions et installation",
+            "Specifications": [
+              {
+                "Name": "Dimensions",
+                "Value": "600 x 850 x 550 mm"
+              },
+              {
+                "Name": "Poids",
+                "Value": "65 kg"
+              }
+            ]
+          }
+        ]
+      },
+      "SearchStatus": "found",
+      "Sources": [
+        {
+          "Url": "https://www.westwing.com",
+          "Title": "Westwing - Lave-linge"
+        },
+        {
+          "Url": "https://www.amazon.fr",
+          "Title": "Amazon - Lave-linge Westwing"
+        }
+      ]
+    }
+  ]
+}

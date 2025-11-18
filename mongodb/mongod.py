@@ -44,5 +44,36 @@ class MonfoDbClient:
             
             # Yield the batch
             yield batch
-            
             skip += batch_size
+
+    def insert_product(self, collection_name: str, product_data: dict) -> str:
+        collection = self.get_collection(collection_name)
+        result = collection.insert_one(product_data)
+        return str(result.inserted_id)
+    
+    def update_product(self, collection_name: str, product_id: str, update_data: dict) -> bool:
+        collection = self.get_collection(collection_name)
+        result = collection.update_one({'_id': product_id}, {'$set': update_data})
+        return result.modified_count > 0
+    
+    def delete_product(self, collection_name: str, product_id: str) -> bool:
+        collection = self.get_collection(collection_name)
+        result = collection.delete_one({'_id': product_id})
+        return result.deleted_count > 0
+    
+    def get_product_by_id(self, collection_name: str, product_id: str) -> Optional[ItemProductDetails]:
+        collection = self.get_collection(collection_name)
+        document = collection.find_one({'_id': product_id})
+        if document:
+            if '_id' in document:
+                document['_id'] = str(document['_id'])
+            return ItemProductDetails(**document)
+        return None 
+    
+    def insert_products_bulk(self, collection_name: str, products_data: List[dict]) -> List[str]:
+        collection = self.get_collection(collection_name)
+        result = collection.insert_many(products_data)
+        return [str(inserted_id) for inserted_id in result.inserted_ids]
+    
+    def close(self):
+        self.client.close()
