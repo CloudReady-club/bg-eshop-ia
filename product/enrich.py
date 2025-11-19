@@ -1,6 +1,7 @@
 from typing import List
 import openai
 from  product.output import parse_item_product_details_response
+from product.embedding import VectorEmbedding
 
 class ProductSearchItem:
     def __init__(self):
@@ -22,10 +23,11 @@ class ProductSearchItem:
     
    
 class LLMCompleter:
-    def __init__(self,base_url: str, api_key: str ,model_name: str):
+    def __init__(self,base_url: str, api_key: str ,model_name: str,embedding: VectorEmbedding):
         self.base_url = base_url
         self.api_key = api_key
         self.model_name = model_name
+        self.embedding = embedding
         self.prompt_template = {}
         self.client= openai.OpenAI(
                 base_url=self.base_url,
@@ -52,7 +54,9 @@ class LLMCompleter:
           
         )
         json_content = response.choices[0].message.content
-        return parse_item_product_details_response(json_content)    
+        product_items= parse_item_product_details_response(json_content)
+        product_items = self.embedding.get_embeddings(product_items) 
+        return product_items
 
         
 

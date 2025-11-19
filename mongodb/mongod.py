@@ -3,6 +3,7 @@ from typing import List, Optional, Generator
 from pydantic import BaseModel, Field
 from pymongo import MongoClient
 from mongodb.item import ItemProductDetails
+from datetime import timezone
 
 class MonfoDbClient:
     def __init__(self, uri: str = 'mongodb://localhost:27017/', db_name: str = 'your_database'):
@@ -46,6 +47,7 @@ class MonfoDbClient:
             yield batch
             skip += batch_size
 
+    
     def insert_product(self, collection_name: str, product_data: dict) -> str:
         collection = self.get_collection(collection_name)
         result = collection.insert_one(product_data)
@@ -77,3 +79,6 @@ class MonfoDbClient:
     
     def close(self):
         self.client.close()
+        
+def utc_now() -> datetime:
+        return datetime.now(timezone.utc)
