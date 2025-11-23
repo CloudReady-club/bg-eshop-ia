@@ -15,18 +15,20 @@ if __name__ == "__main__":
     # Initialize MongoDB client
     mongo_client = MonfoDbClient(uri='mongodb://localhost:27017/', db_name='productDb')
     base_url='https://models.github.ai/inference'
-    api_key=os.environ["GITHUB_TOKEN"]
-
+    # api_key=os.environ["GITHUB_TOKEN"]
+    api_key=os.environ["OPENAI_API_KEY"]
+    
+   
     embedding = VectorEmbedding(
-        base_url=base_url,
+        # base_url=base_url,
         api_key=api_key,
-        model_name='openai/text-embedding-3-small'
+        model_name='text-embedding-3-small'
     )
     
     complerer = LLMCompleter(
-        base_url=base_url,
+        # base_url=base_url,
         api_key=api_key,
-        model_name='gpt-4o-mini',
+        model_name='gpt-5-mini',
         embedding = embedding
     ) 
     
@@ -37,7 +39,7 @@ if __name__ == "__main__":
 
     
     # Get the collection
-    batchList = mongo_client.load_products_in_batches(batch_size=5,collection_name='ItemDetails')
+    batchList = mongo_client.load_products_in_batches(batch_size=5,collection_name='ItemDetails',skip=300)
     # Load products in batches
     print("Starting batch processing...")
     for batch in batchList:
@@ -47,7 +49,7 @@ if __name__ == "__main__":
             parsed_items = productsBatch.get_items_parssed()
         print(f"Processing batch with items: {parsed_items}")
         enriched_text = complerer.erich_text(template_name='batch_product_prompt', text=parsed_items)
-        save_to_json(enriched_text)
+        # save_to_json(enriched_text)
         for product,item in zip(batch,enriched_text.items):
             product.sementic_vector = item.sementic_vector
             product.short_description = item.short_description
@@ -55,10 +57,15 @@ if __name__ == "__main__":
             product.item_specification = item.item_specification
             product.search_status = item.search_status
             product.sources = item.sources
+            product.tags = item.tags
             product.last_modification = utc_now()
+        break
+    
         
         mongo_client.insert_products_bulk(collection_name='productEnrichedDb', products_data=[product.model_dump(by_alias=True) for product in batch])
-        break
+        print("Batch processing completed and saved to database.")
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime()))
+        time.sleep(10)  # To avoid hitting rate limits
 
 
     # parsed_items = "UA43J5202ASXMV:TV SAMSUNG LED FHD SMART  43\" | DHU635HZA:HOTTE ASPIRANTE  BOSCH  VISIERE INOX  60CM | 3484B002AA:Canon Cartridge 725 jusqu'a 1600 pages | EB-P1100CSEGWW:ULC Battery Pack [Type-C] Silver | WW-F2S7K:MACHINE A LAVER WESTWING  FRONTALE 7KG 1200T SILVE"

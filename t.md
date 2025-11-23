@@ -1534,3 +1534,12 @@
         0.02874045819044113,
         0.0017321258783340454,
         0.00309127033688128
+
+
+
+   mongoimport --uri "mongodb://127.0.0.1:27017/productDb" --collection productEnrichedDb --type json --file 
+
+   pymongo.errors.ServerSelectionTimeoutError: Could not reach any servers in [('mongod.search-community', 27017)]. Replica set is configured with internal hostnames or IPs?, Timeout: 30s, Topology Description: <TopologyDescription id: 691fd2fe8c017ce69f02977f, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('mongod.search-community', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('mongod.search-community:27017: [Errno 8] nodename nor servname provided, or not known (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+        
+Profoundly powerful, Apple iPhone 16 Pro Max is built for Apple Intelligence (Apple Intelligence coming December 2024). Featuring a stunning titanium design. Camera Control. 4K 120fps Dolby Vision. And A18 Pro chip.
+Lave-linge frontal Samsung 8 kg avec technologie AddWash et efficacité énergétique A+++.

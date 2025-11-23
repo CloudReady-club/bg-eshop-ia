@@ -23,7 +23,7 @@ class ProductSearchItem:
     
    
 class LLMCompleter:
-    def __init__(self,base_url: str, api_key: str ,model_name: str,embedding: VectorEmbedding):
+    def __init__(self, api_key: str ,model_name: str,embedding: VectorEmbedding,base_url: str= None):
         self.base_url = base_url
         self.api_key = api_key
         self.model_name = model_name
@@ -46,11 +46,12 @@ class LLMCompleter:
         
         response = self.client.chat.completions.create(
             model=self.model_name,
-            temperature=0.3,
+            temperature=0.1,
             messages=[
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": text}
-            ]
+            ],
+            prompt_cache_key=template_name
           
         )
         json_content = response.choices[0].message.content

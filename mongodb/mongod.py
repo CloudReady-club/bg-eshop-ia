@@ -14,7 +14,7 @@ class MonfoDbClient:
         return self.db[collection_name]
 
     
-    def load_products_in_batches(self ,collection_name,batch_size=5) -> Generator[List[ItemProductDetails], None, None]:
+    def load_products_in_batches(self ,collection_name,batch_size=5,skip = 0) -> Generator[List[ItemProductDetails], None, None]:
         """
         Load products in batches using a generator.
         Yields one batch at a time - most memory efficient.
@@ -22,7 +22,7 @@ class MonfoDbClient:
         collection = self.get_collection(collection_name)
         total_count = collection.count_documents({})
         
-        skip = 0
+       
         while skip < total_count:
             # Fetch batch
             documents = list(collection.find().skip(skip).limit(batch_size))
@@ -76,9 +76,13 @@ class MonfoDbClient:
         collection = self.get_collection(collection_name)
         result = collection.insert_many(products_data)
         return [str(inserted_id) for inserted_id in result.inserted_ids]
+    def aggregate_products(self, collection_name: str, pipeline: List[dict]) -> List[dict]:
+        collection = self.get_collection(collection_name)
+        results = list(collection.aggregate(pipeline))
+        return results
     
     def close(self):
         self.client.close()
-        
+
 def utc_now() -> datetime:
         return datetime.now(timezone.utc)

@@ -1,4 +1,4 @@
-db.embedded_movies.createSearchIndex(
+db.productEnrichedDb.createSearchIndex(
   "vector_index", 
   "vectorSearch", 
   {
@@ -7,9 +7,24 @@ db.embedded_movies.createSearchIndex(
         "type": "vector",
         "path": "SementicVector",
         "numDimensions": 1536,
-        "similarity": "dotProduct",
+        "similarity": "cosine",
         "quantization": "scalar"
       }
     ]
   }
 );
+
+db.productEnrichedDb.aggregate(
+   [
+      {
+         $listSearchIndexes:
+            {
+           
+            }
+      }
+   ]
+);
+db.runCommand({
+  dropSearchIndex: "vector_index",
+  collection: "productEnrichedDb"
+});

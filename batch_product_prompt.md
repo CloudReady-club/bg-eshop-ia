@@ -68,7 +68,7 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
 - Title : 10-50 caractères (ex: "Présentation", "Performance", "Pour qui ?")
 - Text : 200-500 mots, ton professionnel, focus bénéfices utilisateur
 
-**ItemSpecification.SpecificationCategories** : 15-20 specs organisées en 2-5 catégories
+**ItemSpecification.SpecificationCategories** : 15-50 specs organisées en 3-8 catégories
 - Catégories courantes : "Caractéristiques générales", "Écran/Affichage", "Performance", "Connectivité", "Dimensions et poids", "Énergie", "Audio"
 - Format : {"Name": "attribut", "Value": "valeur avec unités"}
 - Toujours inclure unités (ex: "250 g", "6,1 pouces")
@@ -211,7 +211,7 @@ Exemple : `PRD001:Sony WH-1000XM5 | PRD002:iPhone 15 Pro`
 }
 ```
 ## Règles Critiques :
-- Recherche web **obligatoire** (code produit puis nom)
+- Recherche web **obligatoire** par product_code
 - Données **vérifiées uniquement**, pas d'invention
 - **15-20 specs minimum** par produit si trouvé
 - **2-5 URLs sources** enregistrées

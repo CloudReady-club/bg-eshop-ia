@@ -36,6 +36,20 @@ services:
       ports:
          - 27028:27028  # Query server port from config
          - 9946:9946    # Metrics port from config
+   mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_URL: mongodb://mongotUser:mongotPassword@mongod:27017/
+      ME_CONFIG_BASICAUTH_ENABLED: true
+      ME_CONFIG_BASICAUTH_USERNAME: mongoexpressuser
+      ME_CONFIG_BASICAUTH_PASSWORD: mongoexpresspass
+    networks:
+          search-community:
+            aliases:
+                - mongo-express.search-community
 
 volumes:
   mongod_data:

@@ -4,7 +4,7 @@ import openai
 
 
 class VectorEmbedding:
-    def __init__(self, base_url, api_key: str, model_name: str):
+    def __init__(self, api_key: str, model_name: str, base_url: str = None):
         self.base_url = base_url
         self.api_key = api_key
         self.model_name = model_name
@@ -30,7 +30,7 @@ class VectorEmbedding:
         return embeddings
     
     def get_embeddings(self, items: ItemProductDetailsResponse) -> ItemProductDetailsResponse:
-        texts = [concatenate_and_prepare_for_embedding([item.title,item.short_description]) for item in items.items]
+        texts = [concatenate_and_prepare_for_embedding([item.title,item.short_description,item.item_description]) for item in items.items]
         response = self.get_batch_embeddings(texts)
         for item, embedding in zip(items.items, response):
             item.sementic_vector = embedding
@@ -42,7 +42,7 @@ def perpareTextForEmbedding(text: str) -> str:
     preprocessed_text = text.lower().strip()
     return preprocessed_text
 
-def concatenate_and_prepare_for_embedding(texts: List[str], separator: str = " | ") -> str:
+def concatenate_and_prepare_for_embedding(title,short_description,item_description, separator: str = " | ") -> str:
     # Filter out empty strings and None values
     filtered_texts = [text for text in texts if text and isinstance(text, str)]
     # Concatenate with separator

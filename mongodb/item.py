@@ -20,11 +20,12 @@ class SpecificationCategory(BaseModel):
 class ItemSpecification(BaseModel):
     specification_categories: List[SpecificationCategory] = Field(default=[], alias="SpecificationCategories")
 
-# class ItemPicture(BaseModel):
-#     title: Optional[str] = None
-#     picture_url: Optional[str] = None
-#     picture_miniature_url: Optional[str] = None
-#     main_picture: bool = False
+class ItemPicture(BaseModel):
+    title: Optional[str] = Field(default=None, alias="Title")
+    picture_url: Optional[str] = Field(default=None, alias="PictureUrl")
+    picture_miniature_url: Optional[str] = Field(default=None, alias="PictureMiniatureUrl")
+    main_picture: bool = Field(default=False, alias="MainPicture")
+
 class Source(BaseModel):
     url: Optional[str] = Field(default=None, alias="Url")
     title: Optional[str] = Field(default=None, alias="Title")
@@ -37,11 +38,12 @@ class ItemProductDetails(BaseModel):
     short_description: Optional[str] = Field(default=None, alias="ShortDescription")
     item_description: Optional[ItemDescription] = Field(default=None, alias="ItemDescription")
     item_specification: Optional[ItemSpecification] = Field(default=None, alias="ItemSpecification")
-    # item_pictures: List[ItemPicture] = Field(default=[], alias="ItemPicture")
+    item_pictures: Optional[List[ItemPicture]] = Field(default=[], alias="ItemPictures")
     last_modification: datetime = Field(default=None, alias="LastModification")
     sementic_vector: Optional[List[float]] = Field(default=None, alias="SementicVector")        
     search_status: Optional[str] = Field(default=None, alias="SearchStatus")
     sources: Optional[List[Source]] = Field(default=None, alias="Sources")
+    tags: Optional[List[str]] = Field(default=None, alias="Tags")
 
     @field_validator('last_modification', mode='before')
     @classmethod
@@ -51,7 +53,7 @@ class ItemProductDetails(BaseModel):
             return datetime.fromisoformat(v['$date'].replace('Z', '+00:00'))
         return v
     
-    class Config:
+    class ConfigDict:
         populate_by_name = True
 
 
