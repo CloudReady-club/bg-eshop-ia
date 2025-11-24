@@ -91,7 +91,7 @@ class LLMCompleter:
         productsBatch = ProductSearchItem()
         for product in products:
             productsBatch.add_item(product.item_code, product.title)
-            parsed_items = productsBatch.get_items_parssed()
+        parsed_items = productsBatch.get_items_parssed()
         print(f"Processing batch with items: {parsed_items}")
         enriched_text = self.__erich_text(template_name='batch_product_prompt', text=parsed_items)
        

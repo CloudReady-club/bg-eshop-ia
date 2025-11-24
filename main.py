@@ -2,7 +2,7 @@ import os
 import logging
 import time
 from mongodb.mongod import utc_now
-from mongodb.mongod import MonfoDbClient
+from mongodb.mongod import MongoDbClient
 from product.enrich import LLMCompleter
 from product.enrich import ProductSearchItem
 from product.output import save_to_json, load_from_json
@@ -13,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 
 if __name__ == "__main__":
     # Initialize MongoDB client
-    mongo_client = MonfoDbClient(uri='mongodb://localhost:27017/', db_name='productDb')
+    mongo_client = MongoDbClient(uri='mongodb://localhost:27017/', db_name='productDb')
     base_url='https://models.github.ai/inference'
     api_key=os.environ["GITHUB_TOKEN"]
   
