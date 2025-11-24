@@ -5,7 +5,7 @@ from pymongo import MongoClient
 from mongodb.item import ItemProductDetails
 from datetime import timezone
 
-class MonfoDbClient:
+class MongoDbClient:
     def __init__(self, uri: str = 'mongodb://localhost:27017/', db_name: str = 'your_database'):
         self.client = MongoClient(uri)
         self.db = self.client[db_name]
