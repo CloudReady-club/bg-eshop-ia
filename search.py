@@ -7,7 +7,7 @@ from product.enrich import LLMCompleter
 from product.enrich import ProductSearchItem
 from product.output import save_to_json, load_from_json
 
-from product.embedding import VectorEmbedding, concatenate_and_prepare_for_embedding
+from product.embedding import VectorEmbedding
 
 logging.basicConfig(level=logging.INFO)
 
@@ -22,9 +22,9 @@ embedding = VectorEmbedding(
     api_key=api_key,
     model_name='openai/text-embedding-3-small'
 )
-query_text = "Aspirateur silencieux"
+query_text = "refrigirateur"
 query_embedding = embedding.get_embedding(query_text)
-print(f"Query Embedding: {query_embedding[:25]}...")  # Print first 25 dimensions for brevity
+# print(f"Query Embedding: {query_embedding[:25]}...")  # Print first 25 dimensions for brevity
 
 pipeline = [
     {
@@ -33,7 +33,7 @@ pipeline = [
             "path": "SementicVector",
             "queryVector": query_embedding,
             "numCandidates": 150,
-            "limit": 10,
+            "limit": 5,
             "quantization": "scalar"
         }
     },

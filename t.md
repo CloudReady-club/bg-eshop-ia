@@ -1543,3 +1543,6 @@
         
 Profoundly powerful, Apple iPhone 16 Pro Max is built for Apple Intelligence (Apple Intelligence coming December 2024). Featuring a stunning titanium design. Camera Control. 4K 120fps Dolby Vision. And A18 Pro chip.
 Lave-linge frontal Samsung 8 kg avec technologie AddWash et efficacité énergétique A+++.
+
+
+export OPENAI_API_KEY=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
