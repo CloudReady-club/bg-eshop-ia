@@ -19,11 +19,15 @@ def enrich(req: SearchRequest):
     if req.products is None or len(req.products) == 0:
         raise HTTPException(status_code=400, detail="Product list is empty")
     if req.products and len(req.products) > 5:
-        raise HTTPException(status_code=400, detail="Too many products provided. Maximum allowed is 100.")
+        raise HTTPException(status_code=400, detail="Too many products provided. Maximum allowed is 5.")
     
  
-    base_url='https://models.github.ai/inference'
-    api_key = os.environ.get("GITHUB_TOKEN")
+    # base_url='https://models.github.ai/inference'
+    # api_key = os.environ.get("GITHUB_TOKEN")
+
+    base_url='https://ylasmak-0418-resource.cognitiveservices.azure.com/openai/v1/'
+    api_key = os.environ.get("AI_FOUNDRY_TOKEN")
+
     if not api_key:
         raise HTTPException(status_code=500, detail="GITHUB_TOKEN environment variable is not set")
     
@@ -34,11 +38,11 @@ def enrich(req: SearchRequest):
 
     completer = LLMCompleter(
         api_key=api_key,
-        model_name='gpt-4o',
+        model_name='grok-3-mini',
         embedding_model_name='openai/text-embedding-3-small',   
         template_name='batch_product_prompt',
         template_file_path='batch_product_prompt.md',
-        base_url=base_url,
+        base_url=base_url
     )
 
     return completer.get_product_enrichment_data(products=parsed_items)

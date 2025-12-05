@@ -1,5 +1,8 @@
 from typing import List
 import openai
+from typing import Optional
+
+
 from  product.output import parse_item_product_details_response
 from product.embedding import VectorEmbedding
 from mongodb.item import ItemProductDetails
@@ -26,14 +29,16 @@ class ProductSearchItem:
     
    
 class LLMCompleter:
-    def __init__(self, api_key: str ,model_name: str,
+    def __init__(self, api_key: str, model_name: str,
                     embedding_model_name: str,
-                    template_name: str,template_file_path: str,
-                    base_url: str= None):
+                    template_name: str, template_file_path: str,
+                    base_url: str = None, temperature: Optional[float] = None):
         
         self.base_url = base_url
         self.api_key = api_key
         self.model_name = model_name
+        self.temperature = temperature
+    
         self.embedding = VectorEmbedding(
                 api_key=self.api_key,
                 model_name=embedding_model_name,
@@ -57,18 +62,23 @@ class LLMCompleter:
         
         prompt = self.prompt_template[template_name]
         
-        response = self.client.chat.completions.create(
-            model=self.model_name,
-            temperature=0.1,
-            messages=[
+        # Build request kwargs, only include temperature if set
+        request_kwargs = {
+            "model": self.model_name,
+            "messages": [
                 {"role": "system", "content": prompt},
                 {"role": "user", "content": text}
             ]
-          
-        )
+        }
+        
+        if self.temperature is not None:
+            request_kwargs["temperature"] = self.temperature
+        
+        response = self.client.chat.completions.create(**request_kwargs)
         json_content = response.choices[0].message.content
         product_items= parse_item_product_details_response(json_content)
-        product_items = self.embedding.get_embeddings(product_items) 
+        # product_items = self.embedding.get_embeddings(product_items) 
+
         print(f"Enrichement:{response.usage.prompt_tokens} prompt tokens used, {response.usage.completion_tokens} completion tokens used, total {response.usage.total_tokens} tokens used.") 
         return product_items
     
