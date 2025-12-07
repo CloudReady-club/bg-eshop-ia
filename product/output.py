@@ -29,7 +29,7 @@ def parse_item_product_details_response(content: str) -> ItemProductDetailsRespo
             print(f"Validation error: {e}")
             print(f"Response: {content}")
             raise
-def save_to_json(data: ItemProductDetailsResponse):
+def save_to_json(data: list[ItemProductDetails]):
     filename = f"enriched_products_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
 
     with open(filename, 'w', encoding='utf-8') as f:

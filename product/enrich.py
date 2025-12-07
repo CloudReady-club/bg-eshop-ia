@@ -109,11 +109,11 @@ class LLMCompleter:
             product.sementic_vector = item.sementic_vector
             product.short_description = item.short_description
             product.item_description = item.item_description
-            product.item_specification = item.item_specification
+            # product.item_specification = item.item_specification
             product.search_status = item.search_status
             product.sources = item.sources
             product.tags = item.tags
-            product.last_modification = utc_now()
+            product.last_modification = utc_now() 
 
         return products
 

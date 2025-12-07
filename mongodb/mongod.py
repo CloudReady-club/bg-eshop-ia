@@ -2,6 +2,7 @@ from datetime import datetime
 from typing import List, Optional, Generator
 from pydantic import BaseModel, Field
 from pymongo import MongoClient
+from bson import ObjectId
 from mongodb.item import ItemProductDetails
 from datetime import timezone
 
@@ -46,6 +47,7 @@ class MongoDbClient:
             # Yield the batch
             yield batch
             skip += batch_size
+  
 
     
     def insert_product(self, collection_name: str, product_data: dict) -> str:
@@ -64,13 +66,28 @@ class MongoDbClient:
         return result.deleted_count > 0
     
     def get_product_by_id(self, collection_name: str, product_id: str) -> Optional[ItemProductDetails]:
+        """
+        Retrieve a single product by its `_id`.
+
+        Accepts `product_id` as either an `ObjectId` hex string or a plain string _id.
+        Falls back gracefully if conversion to `ObjectId` fails.
+        Returns an `ItemProductDetails` model or `None` if not found.
+        """
         collection = self.get_collection(collection_name)
-        document = collection.find_one({'_id': product_id})
+
+        # Try to treat the provided id as an ObjectId first, otherwise use as-is
+        query = None
+        try:
+            query = {'_id': ObjectId(product_id)}
+        except Exception:
+            query = {'_id': product_id}
+
+        document = collection.find_one(query)
         if document:
             if '_id' in document:
                 document['_id'] = str(document['_id'])
             return ItemProductDetails(**document)
-        return None 
+        return None
     
     def insert_products_bulk(self, collection_name: str, products_data: List[dict]) -> List[str]:
         collection = self.get_collection(collection_name)
@@ -80,6 +97,68 @@ class MongoDbClient:
         collection = self.get_collection(collection_name)
         results = list(collection.aggregate(pipeline))
         return results
+    
+    def get_products_by_aggregate_filter(self,
+                                         collection_name: str,
+                                         match_filter: Optional[dict] = None,
+                                         projection: Optional[dict] = None,
+                                         sort: Optional[List[tuple]] = None,
+                                         limit: Optional[int] = None) -> List[ItemProductDetails]:
+        """
+        Retrieve products using a constructed aggregation pipeline.
+
+        Parameters:
+        - `collection_name`: MongoDB collection name
+        - `match_filter`: dict to use in a `$match` stage
+        - `projection`: dict to use in a `$project` stage
+        - `sort`: list of tuples like [("field", 1), ("other", -1)] for `$sort`
+        - `limit`: integer to limit results (`$limit` stage)
+
+        Returns a list of `ItemProductDetails` Pydantic models. Documents' `_id` fields
+        are converted to strings.
+        """
+        collection = self.get_collection(collection_name)
+
+        pipeline: List[dict] = []
+        if match_filter:
+            pipeline.append({'$match': match_filter})
+        if projection:
+            pipeline.append({'$project': projection})
+        if sort:
+            # convert list of tuples to dict for $sort stage
+            sort_dict = {field: direction for field, direction in sort}
+            pipeline.append({'$sort': sort_dict})
+        if limit and isinstance(limit, int) and limit > 0:
+            pipeline.append({'$limit': limit})
+
+        documents = list(collection.aggregate(pipeline))
+
+        products: List[ItemProductDetails] = []
+        for doc in documents:
+            try:
+                if '_id' in doc:
+                    doc['_id'] = str(doc['_id'])
+                product = ItemProductDetails(**doc)
+                products.append(product)
+            except Exception as e:
+                # keep going if a document cannot be parsed into the model
+                print(f"Error parsing document {doc.get('_id')}: {e}")
+                continue
+
+        return products
+    
+    def fetch_products_by_batch(slef,
+             collection_name: str,
+            product_codes: List[str]
+        ) -> Optional[List[ItemProductDetails]]:
+
+        collection = slef.get_collection(collection_name)
+        cursor = collection.find({'_id': {'$in': product_codes}})
+        products = [ItemProductDetails(**doc) for doc in cursor]
+        return products
+     
+ 
+               
     
     def close(self):
         self.client.close()

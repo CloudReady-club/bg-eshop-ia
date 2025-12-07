@@ -25,8 +25,9 @@ def enrich(req: SearchRequest):
     # base_url='https://models.github.ai/inference'
     # api_key = os.environ.get("GITHUB_TOKEN")
 
-    base_url='https://ylasmak-0418-resource.cognitiveservices.azure.com/openai/v1/'
+    base_url='https://bg-ehop-resource.openai.azure.com/openai/v1/'
     api_key = os.environ.get("AI_FOUNDRY_TOKEN")
+   
 
     if not api_key:
         raise HTTPException(status_code=500, detail="GITHUB_TOKEN environment variable is not set")
@@ -42,6 +43,7 @@ def enrich(req: SearchRequest):
         embedding_model_name='openai/text-embedding-3-small',   
         template_name='batch_product_prompt',
         template_file_path='batch_product_prompt.md',
+        temperature=0.3,
         base_url=base_url
     )
 
